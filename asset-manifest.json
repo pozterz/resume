@@ -1,9 +1,10 @@
 {
-  "main.css": "static/css/main.5f5452ff.css",
-  "main.css.map": "static/css/main.5f5452ff.css.map",
-  "main.js": "static/js/main.981e7dbf.js",
-  "main.js.map": "static/js/main.981e7dbf.js.map",
+  "main.css": "static/css/main.c2133dbf.css",
+  "main.css.map": "static/css/main.c2133dbf.css.map",
+  "main.js": "static/js/main.69da2544.js",
+  "main.js.map": "static/js/main.69da2544.js.map",
   "static\\media\\logo.svg": "static/media/logo.5d5d9eef.svg",
+  "static\\media\\shooting-star.svg": "static/media/shooting-star.3f8ebeee.svg",
   "static\\media\\stars-lg.svg": "static/media/stars-lg.8e79bb50.svg",
   "static\\media\\stars-sm.svg": "static/media/stars-sm.0e454a16.svg"
 }
