@@ -178,6 +178,14 @@ section.block { padding-top: 120px; }
 .rank.podium { background: var(--butter); box-shadow: 5px 5px 0 var(--ink); }
 .rank.podium .y { color: var(--ink); }
 
+/* Next chapter */
+.biz-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
+.biz { min-height: 260px; border-radius: 24px; border: var(--line); box-shadow: 5px 5px 0 var(--ink); padding: 22px; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; }
+.biz-top { display: flex; justify-content: space-between; align-items: center; font-size: 12px; }
+.biz-ic { width: 48px; height: 48px; border-radius: 50%; border: 1.5px solid currentColor; display: flex; align-items: center; justify-content: center; }
+.biz b { display: block; font-family: var(--display); font-weight: 800; font-size: 22px; line-height: .95; letter-spacing: -.03em; }
+.biz-line { display: block; margin-top: 8px; font-size: 14px; line-height: 1.4; }
+
 /* Find me */
 .links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
 .links a { height: 168px; border-radius: 24px; border: var(--line); padding: 24px; display: flex; flex-direction: column; justify-content: space-between; transition: transform .15s ease, box-shadow .15s ease; }
@@ -222,6 +230,7 @@ footer { padding-top: 120px; overflow: hidden; }
   .arrow svg { transform: rotate(90deg); }
   .contest-grid { grid-template-columns: 1fr; }
   .links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .biz-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 /* Phone */
@@ -274,6 +283,13 @@ footer { padding-top: 120px; overflow: hidden; }
   .rank { min-height: 110px; border-radius: 20px; padding: 16px; }
   .rank b { font-size: 48px; }
   .links { gap: 10px; }
+  .biz-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .biz { min-height: 170px; border-radius: 20px; padding: 16px; box-shadow: 4px 4px 0 var(--ink); }
+  .biz:last-child { grid-column: 1 / -1; }
+  .biz-top .mono { display: none; }
+  .biz-ic { width: 40px; height: 40px; }
+  .biz b { font-size: 18px; }
+  .biz-line { font-size: 12px; }
   .links a { height: 110px; border-radius: 20px; padding: 16px; }
   .links .h span { display: none; }
   .links .h { justify-content: flex-end; }
@@ -296,7 +312,8 @@ footer { padding-top: 120px; overflow: hidden; }
     <a href="#skills"><span>02</span> Skill tree</a>
     <a href="#evolution"><span>03</span> Evolution</a>
     <a href="#contests"><span>04</span> Contest arc</a>
-    <a href="#find"><span>05</span> Find me</a>
+    <a href="#next"><span>05</span> Next chapter</a>
+    <a href="#find"><span>06</span> Find me</a>
   </nav>
 </header>
 
@@ -547,9 +564,24 @@ footer { padding-top: 120px; overflow: hidden; }
   </div>
 </section>
 
+<!-- Next chapter -->
+<section id="next" class="block">
+  <div class="head">
+    <div><span class="label">05 — Next chapter</span><h2>Where I want to <span class="serif-it">build next</span></h2></div>
+    <p>The industries I’d like my next chapter to be in.</p>
+  </div>
+  <ul class="biz-grid">
+    <li class="biz" style="background:var(--hero);color:var(--cream)"><span class="biz-top"><span class="biz-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v5M12 16v5M3 12h5M16 12h5M6.5 6.5l2.5 2.5M15 15l2.5 2.5M17.5 6.5L15 9M9 15l-2.5 2.5"/></svg></span><span class="mono">01</span></span><span><b>AI development</b><span class="biz-line">LLMs are already on my levelling-up branch.</span></span></li>
+    <li class="biz" style="background:var(--mint)"><span class="biz-top"><span class="biz-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></span><span class="mono">02</span></span><span><b>Investment</b><span class="biz-line">Markets are what I study off-screen.</span></span></li>
+    <li class="biz" style="background:var(--butter)"><span class="biz-top"><span class="biz-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 7.5h4a2.2 2.2 0 010 4.5h-4 4.5a2.2 2.2 0 010 4.5h-4.5zM11 6v1.5M11 16.5V18"/></svg></span><span class="mono">03</span></span><span><b>Cryptocurrency</b><span class="biz-line">Where engineering meets my off-screen interests.</span></span></li>
+    <li class="biz" style="background:var(--lilac)"><span class="biz-top"><span class="biz-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v13H7zM14 3v5h5M4 13h16"/></svg></span><span class="mono">04</span></span><span><b>Document OCR</b><span class="biz-line">Turning paper into data — already levelling up here.</span></span></li>
+    <li class="biz" style="background:var(--coral)"><span class="biz-top"><span class="biz-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19V6M3 14h18v5M21 14a3 3 0 00-3-3h-7v3M7 12.5a1.8 1.8 0 100-3.6 1.8 1.8 0 000 3.6z"/></svg></span><span class="mono">05</span></span><span><b>Hotel booking</b><span class="biz-line">Built there for 2.5 years at Agoda.</span></span></li>
+  </ul>
+</section>
+
 <!-- Find me -->
 <section id="find" class="block">
-  <span class="label">05 — Find me</span>
+  <span class="label">06 — Find me</span>
   <div class="links">
     <a class="l-gh" href="https://github.com/Pozterz" target="_blank" rel="noopener"><span class="h"><span>github.com/Pozterz</span><svg width="16" height="16" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10L10 4M5 4h5v5"/></svg></span><b>GitHub</b></a>
     <a class="l-li" href="https://linkedin.com/in/pozterz/" target="_blank" rel="noopener"><span class="h"><span>in/pozterz</span><svg width="16" height="16" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10L10 4M5 4h5v5"/></svg></span><b>LinkedIn</b></a>
